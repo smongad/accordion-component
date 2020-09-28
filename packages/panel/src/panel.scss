@@ -1,0 +1,32 @@
+@import './panel-map.scss';
+
+* { 
+    box-sizing: border-box;
+}
+
+:host([chip-selected='true']) .container{ 
+    color: var(--panel-primary-active);
+    border-color: var(--panel-primary-active);
+ }
+
+.panel-container{
+    min-width:auto;
+    max-width: 288px;
+    height: 36px;
+    background-color: var(--panel-background-color);
+    border: 1px solid var(--panel-border-color-disable-text);
+    font-size: var(--panel-caption-font-size);
+    color:var(--panel-tertiary-color);
+    border-radius: var(--panel-border-radius);
+
+       
+    .panel-heading{
+        padding: 12px 16px;   
+    }
+
+    .panel-content{
+        padding: 10px;
+        font-weight: var(--chip-font-weight-count);
+        display:none;
+    }
+}
